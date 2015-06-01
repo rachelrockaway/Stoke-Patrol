@@ -86,13 +86,37 @@
                     </tableView>
                     <navigationItem key="navigationItem" id="OZe-68-ya6">
                         <barButtonItem key="leftBarButtonItem" systemItem="refresh" id="SP1-k3-O0k"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="Tvh-8Y-SpJ"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="XQY-op-DQF">
+                            <connections>
+                                <segue destination="i8i-Mq-dE4" kind="show" identifier="AddReportSegue" id="356-eP-kmJ"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c0K-fL-L6z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="413" y="283"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ihm-tj-cI7">
+            <objects>
+                <viewController id="i8i-Mq-dE4" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3wk-aR-xdX"/>
+                        <viewControllerLayoutGuide type="bottom" id="r3n-88-mdh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FiL-Di-Ul1">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="TCp-TG-tYW"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JvD-Ed-nWv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="764" y="283"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="FAt-w4-wgk">
