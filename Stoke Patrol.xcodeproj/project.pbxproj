@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		49F98E071B1C28A5005A9511 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F98E061B1C28A5005A9511 /* AppDelegate.swift */; };
+		49F98E091B1C28A5005A9511 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F98E081B1C28A5005A9511 /* ViewController.swift */; };
+		49F98E0C1B1C28A5005A9511 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49F98E0A1B1C28A5005A9511 /* Main.storyboard */; };
+		49F98E0E1B1C28A5005A9511 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49F98E0D1B1C28A5005A9511 /* Images.xcassets */; };
+		49F98E111B1C28A5005A9511 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49F98E0F1B1C28A5005A9511 /* LaunchScreen.xib */; };
+		49F98E1D1B1C28A5005A9511 /* Stoke_PatrolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F98E1C1B1C28A5005A9511 /* Stoke_PatrolTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		49F98E171B1C28A5005A9511 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 49F98DF91B1C28A5005A9511 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 49F98E001B1C28A5005A9511;
+			remoteInfo = "Stoke Patrol";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		49F98E011B1C28A5005A9511 /* Stoke Patrol.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Stoke Patrol.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		49F98E051B1C28A5005A9511 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49F98E061B1C28A5005A9511 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		49F98E081B1C28A5005A9511 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		49F98E0B1B1C28A5005A9511 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		49F98E0D1B1C28A5005A9511 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		49F98E101B1C28A5005A9511 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		49F98E161B1C28A5005A9511 /* Stoke PatrolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Stoke PatrolTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		49F98E1B1B1C28A5005A9511 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49F98E1C1B1C28A5005A9511 /* Stoke_PatrolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stoke_PatrolTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		49F98DFE1B1C28A5005A9511 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49F98E131B1C28A5005A9511 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		49F98DF81B1C28A5005A9511 = {
+			isa = PBXGroup;
+			children = (
+				49F98E031B1C28A5005A9511 /* Stoke Patrol */,
+				49F98E191B1C28A5005A9511 /* Stoke PatrolTests */,
+				49F98E021B1C28A5005A9511 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		49F98E021B1C28A5005A9511 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				49F98E011B1C28A5005A9511 /* Stoke Patrol.app */,
+				49F98E161B1C28A5005A9511 /* Stoke PatrolTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		49F98E031B1C28A5005A9511 /* Stoke Patrol */ = {
+			isa = PBXGroup;
+			children = (
+				49F98E061B1C28A5005A9511 /* AppDelegate.swift */,
+				49F98E081B1C28A5005A9511 /* ViewController.swift */,
+				49F98E0A1B1C28A5005A9511 /* Main.storyboard */,
+				49F98E0D1B1C28A5005A9511 /* Images.xcassets */,
+				49F98E0F1B1C28A5005A9511 /* LaunchScreen.xib */,
+				49F98E041B1C28A5005A9511 /* Supporting Files */,
+			);
+			path = "Stoke Patrol";
+			sourceTree = "<group>";
+		};
+		49F98E041B1C28A5005A9511 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				49F98E051B1C28A5005A9511 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		49F98E191B1C28A5005A9511 /* Stoke PatrolTests */ = {
+			isa = PBXGroup;
+			children = (
+				49F98E1C1B1C28A5005A9511 /* Stoke_PatrolTests.swift */,
+				49F98E1A1B1C28A5005A9511 /* Supporting Files */,
+			);
+			path = "Stoke PatrolTests";
+			sourceTree = "<group>";
+		};
+		49F98E1A1B1C28A5005A9511 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				49F98E1B1B1C28A5005A9511 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		49F98E001B1C28A5005A9511 /* Stoke Patrol */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49F98E201B1C28A5005A9511 /* Build configuration list for PBXNativeTarget "Stoke Patrol" */;
+			buildPhases = (
+				49F98DFD1B1C28A5005A9511 /* Sources */,
+				49F98DFE1B1C28A5005A9511 /* Frameworks */,
+				49F98DFF1B1C28A5005A9511 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Stoke Patrol";
+			productName = "Stoke Patrol";
+			productReference = 49F98E011B1C28A5005A9511 /* Stoke Patrol.app */;
+			productType = "com.apple.product-type.application";
+		};
+		49F98E151B1C28A5005A9511 /* Stoke PatrolTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49F98E231B1C28A5005A9511 /* Build configuration list for PBXNativeTarget "Stoke PatrolTests" */;
+			buildPhases = (
+				49F98E121B1C28A5005A9511 /* Sources */,
+				49F98E131B1C28A5005A9511 /* Frameworks */,
+				49F98E141B1C28A5005A9511 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				49F98E181B1C28A5005A9511 /* PBXTargetDependency */,
+			);
+			name = "Stoke PatrolTests";
+			productName = "Stoke PatrolTests";
+			productReference = 49F98E161B1C28A5005A9511 /* Stoke PatrolTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		49F98DF91B1C28A5005A9511 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = rachelrockaway;
+				TargetAttributes = {
+					49F98E001B1C28A5005A9511 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					49F98E151B1C28A5005A9511 = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = 49F98E001B1C28A5005A9511;
+					};
+				};
+			};
+			buildConfigurationList = 49F98DFC1B1C28A5005A9511 /* Build configuration list for PBXProject "Stoke Patrol" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 49F98DF81B1C28A5005A9511;
+			productRefGroup = 49F98E021B1C28A5005A9511 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				49F98E001B1C28A5005A9511 /* Stoke Patrol */,
+				49F98E151B1C28A5005A9511 /* Stoke PatrolTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		49F98DFF1B1C28A5005A9511 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49F98E0C1B1C28A5005A9511 /* Main.storyboard in Resources */,
+				49F98E111B1C28A5005A9511 /* LaunchScreen.xib in Resources */,
+				49F98E0E1B1C28A5005A9511 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49F98E141B1C28A5005A9511 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		49F98DFD1B1C28A5005A9511 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49F98E091B1C28A5005A9511 /* ViewController.swift in Sources */,
+				49F98E071B1C28A5005A9511 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49F98E121B1C28A5005A9511 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49F98E1D1B1C28A5005A9511 /* Stoke_PatrolTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		49F98E181B1C28A5005A9511 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 49F98E001B1C28A5005A9511 /* Stoke Patrol */;
+			targetProxy = 49F98E171B1C28A5005A9511 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		49F98E0A1B1C28A5005A9511 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49F98E0B1B1C28A5005A9511 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		49F98E0F1B1C28A5005A9511 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49F98E101B1C28A5005A9511 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		49F98E1E1B1C28A5005A9511 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		49F98E1F1B1C28A5005A9511 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		49F98E211B1C28A5005A9511 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Stoke Patrol/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		49F98E221B1C28A5005A9511 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Stoke Patrol/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		49F98E241B1C28A5005A9511 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Stoke PatrolTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stoke Patrol.app/Stoke Patrol";
+			};
+			name = Debug;
+		};
+		49F98E251B1C28A5005A9511 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Stoke PatrolTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Stoke Patrol.app/Stoke Patrol";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		49F98DFC1B1C28A5005A9511 /* Build configuration list for PBXProject "Stoke Patrol" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49F98E1E1B1C28A5005A9511 /* Debug */,
+				49F98E1F1B1C28A5005A9511 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49F98E201B1C28A5005A9511 /* Build configuration list for PBXNativeTarget "Stoke Patrol" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49F98E211B1C28A5005A9511 /* Debug */,
+				49F98E221B1C28A5005A9511 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		49F98E231B1C28A5005A9511 /* Build configuration list for PBXNativeTarget "Stoke PatrolTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49F98E241B1C28A5005A9511 /* Debug */,
+				49F98E251B1C28A5005A9511 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 49F98DF91B1C28A5005A9511 /* Project object */;
+}
