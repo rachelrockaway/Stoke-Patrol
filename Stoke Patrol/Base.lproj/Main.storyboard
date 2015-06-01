@@ -84,9 +84,29 @@
                             <outlet property="delegate" destination="DBS-4p-Xk2" id="rNl-XO-rBh"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" id="oMg-Z9-Dhr"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c0K-fL-L6z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="413" y="283"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="FAt-w4-wgk">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="lbW-C8-fNl" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Yuf-AA-UEh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="DBS-4p-Xk2" kind="relationship" relationship="rootViewController" id="iqB-9e-s7p"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IFf-gz-WyH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="28" y="283"/>
         </scene>
