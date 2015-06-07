@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		49B2D9061B1EC9F60036FEBE /* bridging header.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B2D9051B1EC9F60036FEBE /* bridging header.m */; };
 		49B2D9081B1ECA1E0036FEBE /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49B2D9071B1ECA1E0036FEBE /* ParseFacebookUtils.framework */; };
 		49B2D90C1B1ECA580036FEBE /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49B2D90B1B1ECA580036FEBE /* ParseFacebookUtilsV4.framework */; };
 		49B2D90E1B1ECA6E0036FEBE /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49B2D90D1B1ECA6E0036FEBE /* ParseFacebookUtilsV4.framework */; };
@@ -48,7 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		49B2D9051B1EC9F60036FEBE /* bridging header.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "bridging header.m"; sourceTree = "<group>"; };
+		4993BB351B24D0E400B23768 /* Stoke Patrol-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Stoke Patrol-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		49B2D9071B1ECA1E0036FEBE /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
 		49B2D90B1B1ECA580036FEBE /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
 		49B2D90D1B1ECA6E0036FEBE /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
@@ -76,7 +75,6 @@
 		49F98E3B1B1C292E005A9511 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		49F98E3D1B1C293B005A9511 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		49F98E3F1B1C294C005A9511 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		49F98E431B1C2A30005A9511 /* Stoke Patrol-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Stoke Patrol-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		49F98E521B1C2CF2005A9511 /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
 		49F98E541B1C2D01005A9511 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		49F98E561B1C2D14005A9511 /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
@@ -155,8 +153,7 @@
 		49F98E041B1C28A5005A9511 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				49F98E431B1C2A30005A9511 /* Stoke Patrol-Bridging-Header.h */,
-				49B2D9051B1EC9F60036FEBE /* bridging header.m */,
+				4993BB351B24D0E400B23768 /* Stoke Patrol-Bridging-Header.h */,
 				49F98E0D1B1C28A5005A9511 /* Images.xcassets */,
 				49F98E0F1B1C28A5005A9511 /* LaunchScreen.xib */,
 				49F98E051B1C28A5005A9511 /* Info.plist */,
@@ -311,7 +308,6 @@
 			files = (
 				49F98E091B1C28A5005A9511 /* ViewController.swift in Sources */,
 				49F98E071B1C28A5005A9511 /* AppDelegate.swift in Sources */,
-				49B2D9061B1EC9F60036FEBE /* bridging header.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
