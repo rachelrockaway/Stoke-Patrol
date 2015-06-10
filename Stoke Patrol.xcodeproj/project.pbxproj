@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4956173E1B2689D90041100A /* TimelineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4956173D1B2689D90041100A /* TimelineTableViewController.swift */; };
+		495617461B27EAF40041100A /* AddReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495617451B27EAF40041100A /* AddReportViewController.swift */; };
+		495617481B27F0270041100A /* TimelineTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 495617471B27F0270041100A /* TimelineTableViewCell.swift */; };
 		49B2D9081B1ECA1E0036FEBE /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49B2D9071B1ECA1E0036FEBE /* ParseFacebookUtils.framework */; };
 		49B2D90C1B1ECA580036FEBE /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49B2D90B1B1ECA580036FEBE /* ParseFacebookUtilsV4.framework */; };
 		49B2D90E1B1ECA6E0036FEBE /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49B2D90D1B1ECA6E0036FEBE /* ParseFacebookUtilsV4.framework */; };
@@ -49,6 +52,9 @@
 
 /* Begin PBXFileReference section */
 		16661BB1EE3E571385E156AE /* Pods-Stoke Patrol.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Stoke Patrol.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Stoke Patrol/Pods-Stoke Patrol.debug.xcconfig"; sourceTree = "<group>"; };
+		4956173D1B2689D90041100A /* TimelineTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineTableViewController.swift; sourceTree = "<group>"; };
+		495617451B27EAF40041100A /* AddReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddReportViewController.swift; sourceTree = "<group>"; };
+		495617471B27F0270041100A /* TimelineTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineTableViewCell.swift; sourceTree = "<group>"; };
 		4993BB351B24D0E400B23768 /* Stoke Patrol-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Stoke Patrol-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		49B2D9071B1ECA1E0036FEBE /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
 		49B2D90B1B1ECA580036FEBE /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
@@ -160,6 +166,9 @@
 				49F98E061B1C28A5005A9511 /* AppDelegate.swift */,
 				49F98E081B1C28A5005A9511 /* ViewController.swift */,
 				49F98E0A1B1C28A5005A9511 /* Main.storyboard */,
+				495617451B27EAF40041100A /* AddReportViewController.swift */,
+				4956173D1B2689D90041100A /* TimelineTableViewController.swift */,
+				495617471B27F0270041100A /* TimelineTableViewCell.swift */,
 				49F98E041B1C28A5005A9511 /* Supporting Files */,
 			);
 			path = "Stoke Patrol";
@@ -358,7 +367,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				49F98E091B1C28A5005A9511 /* ViewController.swift in Sources */,
+				4956173E1B2689D90041100A /* TimelineTableViewController.swift in Sources */,
+				495617481B27F0270041100A /* TimelineTableViewCell.swift in Sources */,
 				49F98E071B1C28A5005A9511 /* AppDelegate.swift in Sources */,
+				495617461B27EAF40041100A /* AddReportViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +508,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "Stoke Patrol/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-l\"Pods-Stoke Patrol-AFNetworking\"",
@@ -555,6 +568,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "Stoke Patrol/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"-l\"Pods-Stoke Patrol-AFNetworking\"",

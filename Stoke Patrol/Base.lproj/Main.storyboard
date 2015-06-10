@@ -4,16 +4,16 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Timeline Table View Controller-->
         <scene sceneID="iXc-ca-IYE">
             <objects>
-                <tableViewController id="DBS-4p-Xk2" sceneMemberID="viewController">
+                <tableViewController id="DBS-4p-Xk2" customClass="TimelineTableViewController" customModule="Stoke_Patrol" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="ae1-Zo-MWn">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Report Cell" id="12F-Hm-ffV">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="12F-Hm-ffV">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="12F-Hm-ffV" id="PEH-ET-D8b">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -27,7 +27,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="135" id="gCG-Dl-QRu">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Report Cell" rowHeight="135" id="gCG-Dl-QRu" customClass="TimelineTableViewCell" customModule="Stoke_Patrol" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gCG-Dl-QRu" id="5Ld-pz-LGf">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -69,8 +69,19 @@
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ABQ-33-Ux4">
+                                            <rect key="frame" x="270" y="8" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="reportTextView" destination="rpa-8P-Gtz" id="8nY-YM-nmn"/>
+                                    <outlet property="timestampLabel" destination="ABQ-33-Ux4" id="eCq-u6-18T"/>
+                                    <outlet property="userNameLabel" destination="0Rp-Vu-Gfv" id="jav-3V-hsM"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -79,8 +90,16 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="OZe-68-ya6">
-                        <barButtonItem key="leftBarButtonItem" systemItem="refresh" id="SP1-k3-O0k"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="XQY-op-DQF"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="refresh" id="SP1-k3-O0k">
+                            <connections>
+                                <action selector="loadData" destination="DBS-4p-Xk2" id="AVc-jg-r6C"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="XQY-op-DQF">
+                            <connections>
+                                <segue destination="sBS-HF-R4c" kind="show" id="RRY-i4-ZEf"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </tableViewController>
@@ -88,33 +107,53 @@
             </objects>
             <point key="canvasLocation" x="413" y="283"/>
         </scene>
-        <!--Table View Controller-->
-        <scene sceneID="uFz-IK-mCr">
+        <!--Add Report View Controller-->
+        <scene sceneID="r1B-D0-v7x">
             <objects>
-                <tableViewController id="vnN-tF-rvv" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="CLW-dk-I75">
+                <viewController id="sBS-HF-R4c" customClass="AddReportViewController" customModule="Stoke_Patrol" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="K4g-FN-0kD"/>
+                        <viewControllerLayoutGuide type="bottom" id="DYa-wJ-obb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LJg-LA-Gtm">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="9C7-I0-a9I">
+                                <rect key="frame" x="22" y="113" width="276" height="130"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et  odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dr0-un-0Wn">
+                                <rect key="frame" x="262" y="273" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="kPp-65-BXe">
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kPp-65-BXe" id="vVP-Mz-Wcu">
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="vnN-tF-rvv" id="ar5-CV-BUh"/>
-                            <outlet property="delegate" destination="vnN-tF-rvv" id="Li2-8V-I0U"/>
-                        </connections>
-                    </tableView>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="fNJ-pR-DDN">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="V9K-T1-CTa">
+                            <connections>
+                                <action selector="sendReport:" destination="sBS-HF-R4c" id="Hng-YE-gam"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RWo-Lj-CYV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                    <connections>
+                        <outlet property="charRemainingLabel" destination="dr0-un-0Wn" id="A4J-dP-UKP"/>
+                        <outlet property="reportTextView" destination="9C7-I0-a9I" id="eWR-0P-TnU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HmY-bI-kuz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="751" y="283"/>
+            <point key="canvasLocation" x="762" y="283"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="FAt-w4-wgk">
